@@ -1,11 +1,13 @@
 {
   "version": "2.0",
-  "dataset_id": "on004952",
-  "source": "openneuro",
-  "source_id": "ds004952",
+  "pipeline_stage": "validated",
   "title": "ChineseEEG: A Chinese Linguistic Corpora EEG Dataset for Semantic Alignment and Neural Decoding",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
-    "Xinyu Mou": {},
+    "Xinyu Mou": {
+      "orcid": "0009-0004-3273-9704"
+    },
     "Cuilin He": {},
     "Liwei Tan": {},
     "Junjie Yu": {},
@@ -13,30 +15,89 @@
     "Jianyu Zhang": {},
     "Tian Yan": {},
     "Yu-Fang Yang": {},
-    "Ting Xu": {},
+    "Ting Xu": {
+      "orcid": "0000-0002-0065-3832"
+    },
     "Qing Wang": {},
     "Miao Cao": {},
     "Zijiao Chen": {},
-    "Chuan-Peng Hu": {},
+    "Chuan-Peng Hu": {
+      "orcid": "0000-0002-7503-5131"
+    },
     "Xindi Wang": {},
     "Quanying Liu": {},
-    "Haiyan Wu": {}
+    "Haiyan Wu": {
+      "orcid": "0000-0001-8869-6636"
+    }
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004952.v1.2.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1038/s41597-024-03398-7",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004952",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004952",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".db",
+    ".eeg",
+    ".json",
+    ".md",
+    ".npy",
+    ".png",
+    ".rar",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".xlsx"
+  ],
+  "description": "ChineseEEG is a high-density EEG dataset with simultaneous eye-tracking recordings from 10 participants silently reading Chinese novels for approximately 11 hours each. The dataset includes raw and preprocessed EEG data at multiple filtering levels, eye-tracking data, Chinese text materials from two novels (The Little Prince and Garnett Dream), and BERT-based text embeddings. This resource enables investigation of semantic alignment between neural representations and natural language processing model embeddings during Chinese language comprehension.",
+  "methods_description": "EEG data were recorded at 1 kHz sampling rate using high-density electrodes during silent reading of Chinese text presented sequentially on screen (0.35 s per character). Simultaneous eye-tracking was performed with calibration at the beginning of each run. Raw data were converted from .mff to BrainVision format and preprocessed with band-pass filtering (0.5-80 Hz and 0.5-30 Hz variants) and independent component analysis, resulting in data at 256 Hz sampling rate.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "eye tracking"
+    },
+    {
+      "term": "Chinese language"
+    },
+    {
+      "term": "semantic processing"
+    },
+    {
+      "term": "neural decoding"
+    },
+    {
+      "term": "natural language processing"
+    },
+    {
+      "term": "reading comprehension"
+    }
+  ],
+  "source_hash": "8306bd9b05a162e1100d6abe26f925d2d35a41884c6eaa6a2518f67597fd90f8"
 }
