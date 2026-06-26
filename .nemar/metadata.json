@@ -1,0 +1,42 @@
+{
+  "version": "2.0",
+  "dataset_id": "on004952",
+  "source": "openneuro",
+  "source_id": "ds004952",
+  "title": "ChineseEEG: A Chinese Linguistic Corpora EEG Dataset for Semantic Alignment and Neural Decoding",
+  "authors": {
+    "Xinyu Mou": {},
+    "Cuilin He": {},
+    "Liwei Tan": {},
+    "Junjie Yu": {},
+    "Huadong Liang": {},
+    "Jianyu Zhang": {},
+    "Tian Yan": {},
+    "Yu-Fang Yang": {},
+    "Ting Xu": {},
+    "Qing Wang": {},
+    "Miao Cao": {},
+    "Zijiao Chen": {},
+    "Chuan-Peng Hu": {},
+    "Xindi Wang": {},
+    "Quanying Liu": {},
+    "Haiyan Wu": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds004952.v1.2.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.7.0",
+  "recording_modality": [
+    "eeg"
+  ],
+  "datatypes": [
+    "eeg"
+  ]
+}
