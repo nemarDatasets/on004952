@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "ChineseEEG: A Chinese Linguistic Corpora EEG Dataset for Semantic Alignment and Neural Decoding",
-  "description": "ChineseEEG is a high-density EEG dataset with simultaneous eye-tracking recordings from 10 participants silently reading Chinese novels for approximately 11 hours each. The dataset includes raw and preprocessed EEG data at multiple filtering levels, eye-tracking data, Chinese text materials from two novels (The Little Prince and Garnett Dream), and BERT-based Chinese text embeddings. This resource enables investigation of semantic alignment between neural representations and natural language processing model embeddings during Chinese language comprehension.",
-  "methods_description": "EEG data were recorded at 1 kHz sampling rate using high-density electrodes during silent reading of Chinese text presented sequentially at 0.35 seconds per character. Simultaneous eye-tracking calibration and recording were performed at the beginning of each run. Raw data were converted from .mff format to BrainVision format and preprocessed with band-pass filtering (0.5-80 Hz and 0.5-30 Hz variants) and independent component analysis, with downsampling to 256 Hz for filtered and preprocessed versions.",
+  "description": "ChineseEEG is a high-density EEG and simultaneous eye-tracking dataset collected from 10 participants silently reading two Chinese novels over approximately 11 hours. The dataset includes raw and multiple stages of pre-processed EEG data, along with BERT-base-chinese text embeddings of the reading materials, designed to support research on semantic alignment between NLP model representations and neural activity. It provides a resource for studying naturalistic language processing and neural decoding using Chinese linguistic stimuli.",
+  "methods_description": "EEG data were recorded at 1 kHz sampling rate using high-density EEG (EGI system, .mff format converted to BrainVision), alongside simultaneous eye-tracking data, while participants silently read Chinese novels presented in a moving-window highlighted reading paradigm. Data were pre-processed through filtering (0.5-80 Hz and 0.5-30 Hz band-pass) and further processed with a full pipeline including bad channel rejection and ICA, down-sampled to 256 Hz. The dataset was organized following the EEG-BIDS specification using the MNE-BIDS package.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -27,7 +27,9 @@
       "orcid": "0000-0002-7503-5131"
     },
     "Xindi Wang": {},
-    "Quanying Liu": {},
+    "Quanying Liu": {
+      "orcid": "0000-0002-2501-7656"
+    },
     "Haiyan Wu": {
       "orcid": "0000-0001-8869-6636"
     }
@@ -37,29 +39,33 @@
       "term": "EEG"
     },
     {
-      "term": "eye tracking"
+      "term": "Eye-Tracking"
+    },
+    {
+      "term": "Reading",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D011932"
+    },
+    {
+      "term": "Semantics",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012660"
+    },
+    {
+      "term": "Natural Language Processing"
     },
     {
       "term": "Chinese language"
     },
     {
-      "term": "semantic processing"
-    },
-    {
-      "term": "neural decoding"
-    },
-    {
-      "term": "natural language processing"
-    },
-    {
-      "term": "reading comprehension"
+      "term": "Neural decoding"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41597-024-03398-7",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on004952",
@@ -75,6 +81,11 @@
       "identifier": "https://nemar.org/dataset/on004952",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2024.02.08.579481",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "resource_type_general": "Dataset",
