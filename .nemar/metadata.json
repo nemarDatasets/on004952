@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "ChineseEEG: A Chinese Linguistic Corpora EEG Dataset for Semantic Alignment and Neural Decoding",
-  "description": "ChineseEEG is a high-density EEG and simultaneous eye-tracking dataset collected from 10 participants silently reading two Chinese novels over approximately 11 hours. The dataset includes raw and multiple stages of pre-processed EEG data, along with BERT-base-chinese text embeddings of the reading materials, designed to support research on semantic alignment between NLP model representations and neural activity. It provides a resource for studying naturalistic language processing and neural decoding using Chinese linguistic stimuli.",
-  "methods_description": "EEG data were recorded at 1 kHz sampling rate using high-density EEG (EGI system, .mff format converted to BrainVision), alongside simultaneous eye-tracking data, while participants silently read Chinese novels presented in a moving-window highlighted reading paradigm. Data were pre-processed through filtering (0.5-80 Hz and 0.5-30 Hz band-pass) and further processed with a full pipeline including bad channel rejection and ICA, down-sampled to 256 Hz. The dataset was organized following the EEG-BIDS specification using the MNE-BIDS package.",
+  "description": "ChineseEEG is a high-density EEG dataset with simultaneous eye-tracking recorded from 10 participants who silently read two Chinese children's novels (The Little Prince and Garnett Dream), with about 11 hours of reading per participant in total. It includes raw data, filtered and minimally pre-processed EEG derivatives, and BERT-base-chinese text embeddings of the stimulus materials. The resource supports research on semantic alignment between language model representations and neural activity, and on neural decoding.",
+  "methods_description": "Participants read text presented as three-line pages, with the middle line highlighted. Each character was highlighted in red for 0.35 s. High-density EEG was recorded with an EGI system at 1 kHz alongside eye-tracking, with eye-tracker calibration at the start of each run. Triggers marked chapters, rows and calibration events. Data were converted to BrainVision format in EEG-BIDS using MNE-BIDS. Filtered (0.5-80 Hz and 0.5-30 Hz) and pre-processed derivatives at 256 Hz are provided.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -39,26 +39,22 @@
       "term": "EEG"
     },
     {
-      "term": "Eye-Tracking"
+      "term": "eye tracking"
     },
     {
-      "term": "Reading",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D011932"
-    },
-    {
-      "term": "Semantics",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012660"
-    },
-    {
-      "term": "Natural Language Processing"
+      "term": "natural reading"
     },
     {
       "term": "Chinese language"
     },
     {
-      "term": "Neural decoding"
+      "term": "neural decoding"
+    },
+    {
+      "term": "semantic alignment"
+    },
+    {
+      "term": "BERT embeddings"
     }
   ],
   "related_identifiers": [
@@ -86,6 +82,16 @@
       "identifier": "10.1101/2024.02.08.579481",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "resource_type_general": "Dataset",
@@ -94,7 +100,7 @@
     "eeg"
   ],
   "sizes": [
-    "748.0 GB (3644 files)"
+    "697 GB (3644 files)"
   ],
   "formats": [
     ".db",
